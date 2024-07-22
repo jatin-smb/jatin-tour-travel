@@ -1,0 +1,875 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/css/output.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<body>
+    <!-- top bar -->
+    <div class="bg-[#0F172A] py-4 flex justify-between px-20 ">
+        <div class="text-white flex space-x-2 ">
+            <div class="flex items-center space-x-2">
+                <i class="fa-regular fa-clock text-red-600"></i>
+                <p>Mon-Sat: 9am to 6pm</p>
+            </div>
+            <a href="#" class="space-x-2">
+                <div class="flex items-center space-x-2">
+                    <i class="fa-solid fa-location-dot text-red-600"></i>
+                    <p>Houston, USA 485</p>
+                </div>
+            </a>
+        </div>
+        <div class="text-white flex items-center space-x-3">
+            <a href="#">
+                <i class="fa-regular fa-envelope text-red-600 "></i>
+            </a>
+            <a href="#">contect@example.com</a>
+            <div>
+                <a href="#" class="space-x-4">
+                    <i class="fa-brands fa-facebook-f"></i>
+                    <i class="fa-brands fa-instagram"></i>
+                    <i class="fa-brands fa-twitter"></i>
+                    <i class="fa-solid fa-phone"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+    <!-- top bar end -->
+     <!-- hone pannel -->
+    <div class="h-[700px] " style="background-image: url(https://assets.thehansindia.com/h-upload/2019/12/27/248830-worldtour.jpg?width=500&height=300); ">
+        <!-- nav st -->
+        <div class="flex bg-transparent text-white py-4 space-x-10 items-center justify-between px-20">
+            <div class="py-4">
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAIUAAAAcCAYAAABPs3y3AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA2RpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDpBNTlEOUU0QkI0QzBFRTExQUY4MkM3ODFEQkQ3RjEwRSIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDowN0QwQUVFRkMwRjcxMUVFOEZCQjk2QjkzREM2MUY0RSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDowN0QwQUVFRUMwRjcxMUVFOEZCQjk2QjkzREM2MUY0RSIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgQ1M1IFdpbmRvd3MiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDo5MEE1QTZEMEYwQzBFRTExQUY4MkM3ODFEQkQ3RjEwRSIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDpBNTlEOUU0QkI0QzBFRTExQUY4MkM3ODFEQkQ3RjEwRSIvPiA8L3JkZjpEZXNjcmlwdGlv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" alt="" class="w-[80px] object-contain ms-10">
+            </div>
+            <div class="items-center">
+                <ul class="flex space-x-10 items-center">
+                    <li>
+                        <a href="#">Hero</a>
+                    </li>
+                    <li>
+                        <a href="#">Listing</a>
+                    </li>
+                    <li>
+                        <a href="#">Pages</a>
+                    </li>
+                    <li>
+                        <a href="#">Blog</a>
+                    </li>
+                    <li>
+                        <a href="#">Contact Us</a>
+                    </li>
+                    <a href="#">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </a>
+                    <img src="https://travosy.vercel.app/static/media/16.940dc3cbe37532ee862e.jpg" alt="" class="h-10 w-10 rounded-lg border-red-600">
+                </ul>
+            </div>
+        </div>
+        <!-- nav end -->
+        <div class=" text-center text-white space-y-10 mt-20">
+            <h1 class="text-6xl">Let the journey begin...</h1>
+            <p class="text-2xl">Planning a trip We will organize your trip with the best  <br> places and within best budget!</p>
+        </div>
+        <div class="container mx-auto bg-white rounded-lg py-4 w-[1150px] mt-20">
+            <div class="grid-cols-5 flex space-x-10  justify-center ">
+                <div class="cols-span-1 space-y-4">
+                    <h1 class="text-lg">Search</h1>
+                    <div class="flex items-center space-x-2 ">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                        <input type="text" class="text-[#94A3B8]" placeholder="Search">
+                    </div>
+                </div>
+                
+                <div class="cols-span-1 space-y-4">
+                    <h1 class="text-lg">Select Your Date:</h1>
+                    <div class="flex">
+                        <input type="date" class="text-[#94A3B8]" placeholder="Search">
+                    </div>
+                </div>
+                <div class="cols-span-1 space-y-4">
+                    <h1 class="text-lg">Select your Date:</h1>
+                    <div class="flex items-center space-x-2">
+                        
+                        <input type="date" class="text-[#94A3B8]" placeholder="Search">
+                    </div>
+                </div>
+                <div class="cols-span-1 space-y-4">
+                    <h1 class="text-lg">No. of person:</h1>
+                    <div class="flex items-center space-x-2 px-4">
+                        <i class="fa-regular fa-user"></i>
+                        <input type="tel" placeholder="Search">
+                    </div>
+                </div>
+                <div class="cols-span-1 space-y-4">
+                    <h1></h1>
+                    <div class="flex items-center space-x-2  py-4">
+                        <a href="#" class="px-20 py-3 bg-[#fb4848] text-white font-bold text-lg rounded-lg ">Submit</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <!-- hone pannel -->
+
+
+    <!-- Top Destinations -->
+     <div class="container mx-auto  py-20 ">
+        <h1 class="font-semibold text-4xl text-center">Top Destinations</h1>
+        <p class="text-[16px] text-[#94A3B8] py-10 font-bold text-center">Planning for a trip? We will organize your trip with the best places and within <br> best  budget!</p>
+        <div class="grid-cols-4 flex space-x-10 justify-center my-10">
+            <div class="cols-span-1">
+                <div class=" relative">
+                    <div class="absolute pt-20 px-4 ">
+                        <a href="#">
+                            <h1 class="text-white font-bold hover:text-[#fb4848]">Rome,itely</h1>
+                        </a>
+                        <p class="text-[#94A3B8] font-bold">3 Hoteis</p>
+                    </div>
+                    <img src="https://travosy.vercel.app/static/media/1.07f134933e8c8ac359b9.jpg" alt="" class="w-[250px] h-[150px] rounded-lg">
+                </div>
+            </div>
+            <div class="cols-span-1">
+                <div class=" relative">
+                    <div class="absolute pt-20 px-4 ">
+                        <a href="#">
+                            <h1 class="text-white font-bold hover:text-[#fb4848]">Singapore</h1>
+                        </a>
+                        <p class="text-[#94A3B8] font-bold">3 Hoteis</p>
+                    </div>
+                    <img src="https://travosy.vercel.app/static/media/2.e083e5af6b98325ac9ed.jpg" alt="" class="w-[250px] h-[150px] rounded-lg">
+                </div>
+            </div>
+            <div class="cols-span-1">
+                <div class=" relative">
+                    <div class="absolute pt-20 px-4 ">
+                        <a href="#">
+                            <h1 class="text-white font-bold hover:text-[#fb4848]">paris, France</h1>
+                        </a>
+                        <p class="text-[#94A3B8] font-bold">3 Hoteis</p>
+                    </div>
+                    <img src="https://travosy.vercel.app/static/media/3.597c87bf0632b9e644e2.jpg" alt="" class="w-[250px] h-[150px] rounded-lg">
+                </div>
+            </div>
+            <div class="cols-span-1">
+                <div class=" relative">
+                    <div class="absolute pt-20 px-4 ">
+                        <a href="#">
+                            <h1 class="text-white font-bold hover:text-[#fb4848]">Goa, india</h1>
+                        </a>
+                        <p class="text-[#94A3B8] font-bold">3 Hoteis</p>
+                    </div>
+                    <img src="https://travosy.vercel.app/static/media/4.738a1d5ee8bdcfd7b945.jpg" alt="" class="w-[250px] h-[150px] rounded-lg">
+                </div>
+            </div>
+        </div>
+
+        <div class="grid-cols-4 flex space-x-10 justify-center my-10">
+            <div class="cols-span-1">
+                <div class=" relative">
+                    <div class="absolute pt-20 px-4 ">
+                        <a href="#">
+                            <h1 class="text-white font-bold hover:text-[#fb4848]">Rome,itely</h1>
+                        </a>
+                        <p class="text-[#94A3B8] font-bold">3 Hoteis</p>
+                    </div>
+                    <img src="https://travosy.vercel.app/static/media/5.7fc305392ebd2b2e44bd.jpg" alt="" class="w-[250px] h-[150px] rounded-lg">
+                </div>
+            </div>
+            <div class="cols-span-1">
+                <div class=" relative">
+                    <div class="absolute pt-20 px-4 ">
+                        <a href="#">
+                            <h1 class="text-white font-bold hover:text-[#fb4848]">Singapore</h1>
+                        </a>
+                        <p class="text-[#94A3B8] font-bold">3 Hoteis</p>
+                    </div>
+                    <img src="https://travosy.vercel.app/static/media/6.80f336c14ef430b03951.jpg" alt="" class="w-[250px] h-[150px] rounded-lg">
+                </div>
+            </div>
+            <div class="cols-span-1">
+                <div class=" relative">
+                    <div class="absolute pt-20 px-4 ">
+                        <a href="#">
+                            <h1 class="text-white font-bold hover:text-[#fb4848]">paris, France</h1>
+                        </a>
+                        <p class="text-[#94A3B8] font-bold">3 Hoteis</p>
+                    </div>
+                    <img src="https://travosy.vercel.app/static/media/7.5cfd54c6101a50fd4a60.jpg" alt="" class="w-[250px] h-[150px] rounded-lg">
+                </div>
+            </div>
+            <div class="cols-span-1">
+                <div class=" relative">
+                    <div class="absolute pt-20 px-4 ">
+                        <a href="#">
+                            <h1 class="text-white font-bold hover:text-[#fb4848]">Goa, india</h1>
+                        </a>
+                        <p class="text-[#94A3B8] font-bold">3 Hoteis</p>
+                    </div>
+                    <img src="https://travosy.vercel.app/static/media/8.5792393c610e8d6c2236.jpg" alt="" class="w-[250px] h-[150px] rounded-lg">
+                </div>
+            </div>
+        </div>
+     </div>
+     <!-- Top Destinations end -->
+
+     <!-- world best st -->
+     <div class="container mx-auto flex space-x-10 py-10  w-full">
+        <div class="w-[50%] relative">
+            <div class="absolute flex items-center space-x-4 bg-white  ml-80 my-24 px-10 rounded-lg shadow-lg">
+                <i class="fa-solid fa-globe text-[#fb4848]"></i>
+                <div class="py-4">
+                    <p class="text-[#94A3B8]">Travel Packages</p>
+                    <h1>50+</h1>
+                </div>
+            </div>
+            <div class="absolute flex items-center space-x-4 bg-white  my-96 px-8  rounded-lg ">
+                <i class="fa-solid fa-globe text-[#fb4848]"></i>
+                <div class="py-4">
+                    <p class="text-[#94A3B8]">Travel Packages</p>
+                    <h1>50+</h1>
+                </div>
+            </div>
+            <img src="https://travosy.vercel.app/static/media/about.3fbbd871b0481164dd4a.jpg" alt="" class="h-[600px] object-contain rounded-lg ">
+        </div>
+        <div class="w-[50%] ">
+            <h1 class="text-[48px] font-semibold ">World Best Travel Agency: Travosy</h1>
+            
+            <p class="text-[#94A3B8] py-10">Get instant helpful resources about anything on the go, easily implement secure money transfer solutions, boost your daily efficiency, connect to other app users and create your own Travosy network, and much more with just a few taps. commodo consequat. Duis aute irure.
+            </p>
+            <a href="#" class=" px-8 py-4 bg-[#fb4848] text-white font-bold rounded-md">Read More </a>
+            
+        </div>
+    </div>
+
+      <!-- world best st -->
+
+     <!-- Tours Packages -->
+     <div class="container mx-auto">
+        <h1 class="text-4xl py-5 font-semibold text-center">Tours Packages</h1>
+        <p class="text-[#94A3B8] py-10 text-center">
+            Planning for a trip? We will organize your trip with the best places and within <br> best budget!
+        </p>
+        <div class="grid-cols-4 flex justify-center space-x-11 my-7">
+            <div class="cols-span-1 border rounded-lg w-[250px] space-y-5  ">
+                <div class="w-[300px] h-[155px] px-6 py-4">
+                    <img src="https://travosy.vercel.app/static/media/1.07f134933e8c8ac359b9.jpg" alt="" class="rounded-lg w-[200px] h-[125px]">
+                </div>
+                <div class="flex items-center space-x-2 px-6 py-2">
+                    <i class="fa-solid fa-location-dot text-[#fb4848]"></i>
+                    <b class="text-[#94A3B8]">Dubai</b>
+                </div>
+                <h1 class="font-bold hover:text-[#fb4848] text-[18px] px-6">
+                    <a href="#">Cuba Sailing Adventure</a>
+                </h1>
+                <div class="flex px-4">
+                    <p class="text-[#94A3B8]">Rating:</p>
+                    <div class=" text-yellow-500 ">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <p>5.0(30)</p>
+                </div>
+                <div class="flex justify-between px-4 py-4">
+                    <h1 class="text-[#fb4848]">$ 58 / Day</h1>
+                    <a href="#" class=" text-[#94A3B8] hover:text-[#fb4848]">Explore Now 
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="cols-span-1 border rounded-lg w-[250px] space-y-5 ">
+                <div class="w-[300px] h-[155px] px-6 py-4">
+                    <img src="	https://travosy.vercel.app/static/media/2.e083e5af6b98325ac9ed.jpg" alt="" class="rounded-lg w-[200px] h-[125px]">
+                </div>
+                <div class="flex items-center space-x-2 px-6 py-2">
+                    <i class="fa-solid fa-location-dot text-[#fb4848]"></i>
+                    <b class="text-[#94A3B8]">italy</b>
+                </div>
+                <h1 class="font-bold hover:text-[#fb4848]  text-[18px]  px-6 ">
+                    <a href="#">Tour in New York</a>
+                </h1>
+                <div class="flex px-4">
+                    <p class="text-[#94A3B8]">Rating:</p>
+                    <div class=" text-yellow-500 ">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <p>5.0(30)</p>
+                </div>
+                <div class="flex justify-between px-4 py-4">
+                    <h1 class="text-[#fb4848]">$ 58 / Day</h1>
+                    <a href="#" class=" text-[#94A3B8] hover:text-[#fb4848]">Explore Now 
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="cols-span-1 border rounded-lg w-[250px] space-y-5 ">
+                <div class="w-[300px] h-[155px] px-6 py-4">
+                    <img src="https://travosy.vercel.app/static/media/9.d91e9dafb799dc9eeb03.jpg" alt="" class="rounded-lg w-[200px] h-[125px]">
+                </div>
+                <div class="flex items-center space-x-2 px-6 py-2">
+                    <i class="fa-solid fa-location-dot text-[#fb4848]"></i>
+                    <b class="text-[#94A3B8]">Pattaya</b>
+                </div>
+                <h1 class="font-bold hover:text-[#fb4848] px-6 text-[18px]">
+                    <a href="#">Osa Peninsula to Dominical</a>
+                </h1>
+                <div class="flex px-4">
+                    <p class="text-[#94A3B8]">Rating:</p>
+                    <div class=" text-yellow-500 ">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <p>5.0(30)</p>
+                </div>
+                <div class="flex justify-between px-4 py-4">
+                    <h1 class="text-[#fb4848]">$ 58 / Day</h1>
+                    <a href="#" class=" text-[#94A3B8] hover:text-[#fb4848]">Explore Now 
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="cols-span-1 border rounded-lg w-[250px] space-y-5 ">
+                <div class="w-[300px] h-[155px] px-6 py-4">
+                    <img src="https://travosy.vercel.app/static/media/10.9dbeb30e826a7a4d09a4.jpg" alt="" class="rounded-lg w-[200px] h-[125px]">
+                </div>
+                <div class="flex items-center space-x-2 px-6 py-2">
+                    <i class="fa-solid fa-location-dot text-[#fb4848]"></i>
+                    <b class="text-[#94A3B8]">Lakshadweep</b>
+                </div>
+                <h1 class="font-bold hover:text-[#fb4848] px-6 text-[18px]">
+                    <a href="#">History of The Emporer</a>
+                </h1>
+                <div class="flex px-4">
+                    <p class="text-[#94A3B8]">Rating:</p>
+                    <div class=" text-yellow-500 ">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <p>5.0(30)</p>
+                </div>
+                <div class="flex justify-between px-4 py-4">
+                    <h1 class="text-[#fb4848]">$ 58 / Day</h1>
+                    <a href="#" class=" text-[#94A3B8] hover:text-[#fb4848]">Explore Now 
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="grid-cols-4 flex justify-center space-x-11 my-7">
+            <div class="cols-span-1 border rounded-lg w-[250px] space-y-5  ">
+                <div class="w-[300px] h-[155px] px-6 py-4">
+                    <img src="https://travosy.vercel.app/static/media/5.7fc305392ebd2b2e44bd.jpg" alt="" class="rounded-lg w-[200px] h-[125px]">
+                </div>
+                <div class="flex items-center space-x-2 px-6 py-2">
+                    <i class="fa-solid fa-location-dot text-[#fb4848]"></i>
+                    <b class="text-[#94A3B8]">Paris</b>
+                </div>
+                <h1 class="font-bold hover:text-[#fb4848] px-6 text-[18px]">
+                    <a href="#">Wildness of Paris</a>
+                </h1>
+                <div class="flex px-4">
+                    <p class="text-[#94A3B8]">Rating:</p>
+                    <div class=" text-yellow-500 ">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <p>5.0(30)</p>
+                </div>
+                <div class="flex justify-between px-4 py-4">
+                    <h1 class="text-[#fb4848]">$ 58 / Day</h1>
+                    <a href="#" class=" text-[#94A3B8] hover:text-[#fb4848]">Explore Now 
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="cols-span-1 border rounded-lg w-[250px] space-y-5 ">
+                <div class="w-[300px] h-[155px] px-6 py-4">
+                    <img src="https://travosy.vercel.app/static/media/6.80f336c14ef430b03951.jpg" alt="" class="rounded-lg w-[200px] h-[125px]">
+                </div>
+                <div class="flex items-center space-x-2 px-6 py-2">
+                    <i class="fa-solid fa-location-dot text-[#fb4848]"></i>
+                    <b class="text-[#94A3B8]">Bangkok</b>
+                </div>
+                <h1 class="font-bold hover:text-[#fb4848] px-6 text-[18px]">
+                    <a href="#">Hot Baloon journey</a>
+                </h1>
+                <div class="flex px-4">
+                    <p class="text-[#94A3B8]">Rating:</p>
+                    <div class=" text-yellow-500 ">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <p>5.0(30)</p>
+                </div>
+                <div class="flex justify-between px-4 py-4">
+                    <h1 class="text-[#fb4848]">$ 58 / Day</h1>
+                    <a href="#" class=" text-[#94A3B8] hover:text-[#fb4848]">Explore Now 
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="cols-span-1 border rounded-lg w-[250px] space-y-5 ">
+                <div class="w-[300px] h-[155px] px-6 py-4">
+                    <img src="https://travosy.vercel.app/static/media/7.5cfd54c6101a50fd4a60.jpg" alt="" class="rounded-lg w-[200px] h-[125px]">
+                </div>
+                <div class="flex items-center space-x-2 px-6 py-2">
+                    <i class="fa-solid fa-location-dot text-[#fb4848]"></i>
+                    <b class="text-[#94A3B8]">Singapore</b>
+                </div>
+                <h1 class="font-bold hover:text-[#fb4848] px-6 text-[18px]">
+                    <a href="#">Orca Camp Kayaking Trip</a>
+                </h1>
+                <div class="flex px-4">
+                    <p class="text-[#94A3B8]">Rating:</p>
+                    <div class=" text-yellow-500 ">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <p>5.0(30)</p>
+                </div>
+                <div class="flex justify-between px-4 py-4">
+                    <h1 class="text-[#fb4848]">$ 58 / Day</h1>
+                    <a href="#" class=" text-[#94A3B8] hover:text-[#fb4848]">Explore Now 
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="cols-span-1 border rounded-lg w-[250px] space-y-5 ">
+                <div class="w-[300px] h-[155px] px-6 py-4">
+                    <img src="https://travosy.vercel.app/static/media/8.5792393c610e8d6c2236.jpg" alt="" class="rounded-lg w-[200px] h-[125px]">
+                </div>
+                <div class="flex items-center space-x-2 px-6 py-2">
+                    <i class="fa-solid fa-location-dot text-[#fb4848]"></i>
+                    <b class="text-[#94A3B8]">Thailand</b>
+                </div>
+                <h1 class="font-bold hover:text-[#fb4848] px-6 text-[18px]">
+                    <a href="#">cano Cristales River Trip</a>
+                </h1>
+                <div class="flex px-4">
+                    <p class="text-[#94A3B8]">Rating:</p>
+                    <div class=" text-yellow-500 ">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <p>5.0(30)</p>
+                </div>
+                <div class="flex justify-between px-4 py-4">
+                    <h1 class="text-[#fb4848]">$ 58 / Day</h1>
+                    <a href="#" class=" text-[#94A3B8] hover:text-[#fb4848]">Explore Now 
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="grid-cols-4 flex justify-center space-x-11 my-7">
+            <div class="cols-span-1 border rounded-lg w-[250px] space-y-5  ">
+                <div class="w-[300px] h-[155px] px-6 py-4">
+                    <img src="	https://travosy.vercel.app/static/media/9.d91e9dafb799dc9eeb03.jpg" alt="" class="rounded-lg w-[200px] h-[125px]">
+                </div>
+                <div class="flex items-center space-x-2 px-6 py-2">
+                    <i class="fa-solid fa-location-dot text-[#fb4848]"></i>
+                    <b class="text-[#94A3B8]">Pattaya</b>
+                </div>
+                <h1 class="font-bold hover:text-[#fb4848] px-6 text-[18px]">
+                    <a href="#">Osa Peninsula to Dominical</a>
+                </h1>
+                <div class="flex px-4">
+                    <p class="text-[#94A3B8]">Rating:</p>
+                    <div class=" text-yellow-500 ">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <p>5.0(30)</p>
+                </div>
+                <div class="flex justify-between px-4 py-4">
+                    <h1 class="text-[#fb4848]">$ 58 / Day</h1>
+                    <a href="#" class=" text-[#94A3B8] hover:text-[#fb4848]">Explore Now 
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="cols-span-1 border rounded-lg w-[250px] space-y-5 ">
+                <div class="w-[300px] h-[155px] px-6 py-4">
+                    <img src="https://travosy.vercel.app/static/media/10.9dbeb30e826a7a4d09a4.jpg" alt="" class="rounded-lg w-[200px] h-[125px]">
+                </div>
+                <div class="flex items-center space-x-2 px-6 py-2">
+                    <i class="fa-solid fa-location-dot text-[#fb4848]"></i>
+                    <b class="text-[#94A3B8]">Lakshadweep</b>
+                </div>
+                <h1 class="font-bold hover:text-[#fb4848] px-6 text-[18px]">
+                    <a href="#">History of The Emporer</a>
+                </h1>
+                <div class="flex px-4">
+                    <p class="text-[#94A3B8]">Rating:</p>
+                    <div class=" text-yellow-500 ">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <p>5.0(30)</p>
+                </div>
+                <div class="flex justify-between px-4 py-4">
+                    <h1 class="text-[#fb4848]">$ 58 / Day</h1>
+                    <a href="#" class=" text-[#94A3B8] hover:text-[#fb4848]">Explore Now 
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="cols-span-1 border rounded-lg w-[250px] space-y-5 ">
+                <div class="w-[300px] h-[155px] px-6 py-4">
+                    <img src="https://travosy.vercel.app/static/media/11.7bc6c00df41ec272ba43.jpg" alt="" class="rounded-lg w-[200px] h-[125px]">
+                </div>
+                <div class="flex items-center space-x-2 px-6 py-2">
+                    <i class="fa-solid fa-location-dot text-[#fb4848]"></i>
+                    <b class="text-[#94A3B8]">Paris</b>
+                </div>
+                <h1 class="font-bold hover:text-[#fb4848] px-6 text-[18px]">
+                    <a href="#">Wildness of paris </a>
+                </h1>
+                <div class="flex px-4">
+                    <p class="text-[#94A3B8]">Rating:</p>
+                    <div class=" text-yellow-500 ">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <p>5.0(30)</p>
+                </div>
+                <div class="flex justify-between px-4 py-4">
+                    <h1 class="text-[#fb4848]">$ 58 / Day</h1>
+                    <a href="#" class=" text-[#94A3B8] hover:text-[#fb4848]">Explore Now 
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="cols-span-1 border rounded-lg w-[250px] space-y-5 ">
+                <div class="w-[300px] h-[155px] px-6 py-4">
+                    <img src="https://travosy.vercel.app/static/media/12.c60182675fc8ccbc0051.jpg" alt="" class="rounded-lg w-[200px] h-[125px]">
+                </div>
+                <div class="flex items-center space-x-2 px-6 py-2">
+                    <i class="fa-solid fa-location-dot text-[#fb4848]"></i>
+                    <b class="text-[#94A3B8]">London</b>
+                </div>
+                <h1 class="font-bold hover:text-[#fb4848] px-6 text-[18px]">
+                    <a href="#">The Hills and Mountains</a>
+                </h1>
+                <div class="flex px-4">
+                    <p class="text-[#94A3B8]">Rating:</p>
+                    <div class=" text-yellow-500 ">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <p>5.0(30)</p>
+                </div>
+                <div class="flex justify-between px-4 py-4">
+                    <h1 class="text-[#fb4848]">$ 58 / Day</h1>
+                    <a href="#" class=" text-[#94A3B8] hover:text-[#fb4848]">Explore Now 
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+     </div>
+     <!-- Tours Packages end -->
+
+       <!-- testimonials st -->
+       <div class="container mx-auto py-10 text-center">
+        <h1 class="text-4xl py-5 font-semibold">What Our Users Say</h1>
+        <p class="text-[#94A3B8] py-10">This is just a simple text made for this unique and awesome template, you <br> can replace it with any text.</p>
+          <div class="owl-carousel para">
+            <div class="w-[400px]">
+                <div class="border p-5 shadow-md">
+                    <i class="fas fa-quote-left text-4xl text-[#fb4848]"></i>
+                    <p class="text-[#52575e]">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut molestiae dolorem deserunt soluta nobis, maiores at veniam quaerat beatae! Iste placeat minus repudiandae dicta consequatur quibusdam alias ipsum a fuga?</p>
+                    <div class=" text-yellow-500 py-5">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                </div>
+                <div class="mt-5">
+                    <div class="h-[56px]  w-[56px] rounded-[50%] mx-auto">
+                        <img src="https://travosy.vercel.app/static/media/03.2dd33f5f871860bfe7a6.jpg" alt="" class="w-[56px] h-[56px] rounded-[50%] ">
+                    </div>
+                    <h1 class="py-5 font-bold">Jemina Clone</h1>
+                    <p class="text-[#52575e] font-bold">Manager</p>
+                </div>
+            </div>
+            <div class="w-[400px]">
+                <div class="border p-5 shadow-md">
+                    <i class="fas fa-quote-left text-4xl text-[#fb4848]"></i>
+                    <p class="text-[#94A3B8]">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut molestiae dolorem deserunt soluta nobis, maiores at veniam quaerat beatae! Iste placeat minus repudiandae dicta consequatur quibusdam alias ipsum a fuga?</p>
+                    <div class=" text-yellow-500 py-5">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                </div>
+                <div class="mt-5">
+                    <div class="h-[56px]  w-[56px] rounded-[50%] mx-auto">
+                        <img src="https://travosy.vercel.app/static/media/01.5fa6455abf6536cb1885.jpg" alt="" class="w-[56px] h-[56px] rounded-[50%] ">
+                    </div>
+                    <h1 class="py-5 font-bold">Calvin Clarlo</h1>
+                    <p class="text-[#94A3B8] font-bold">Manager</p>
+                </div>
+            </div>
+            <div class="w-[400px]">
+                <div class="border p-5 shadow-md">
+                    <i class="fas fa-quote-left text-4xl text-[#fb4848]"></i>
+                    <p class="text-[#94A3B8]">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut molestiae dolorem deserunt soluta nobis, maiores at veniam quaerat beatae! Iste placeat minus repudiandae dicta consequatur quibusdam alias ipsum a fuga?</p>
+                    <div class=" text-yellow-500 py-5">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                </div>
+                <div class="mt-5">
+                    <div class="h-[56px]  w-[56px] rounded-[50%] mx-auto">
+                        <img src="https://travosy.vercel.app/static/media/04.83a0e432316fac374b37.jpg" alt="" class="w-[56px] h-[56px] rounded-[50%] ">
+                    </div>
+                    <h1 class="py-5 font-bold">Christa Smith</h1>
+                    <p class="text-[#94A3B8] font-bold">Manager</p>
+                </div>
+            </div>
+            <div class="w-[400px]">
+                <div class="border p-5 shadow-md">
+                    <i class="fas fa-quote-left text-4xl text-[#fb4848]"></i>
+                    <p class="text-[#94A3B8]">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut molestiae dolorem deserunt soluta nobis, maiores at veniam quaerat beatae! Iste placeat minus repudiandae dicta consequatur quibusdam alias ipsum a fuga?</p>
+                    <div class=" text-yellow-500 py-5">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                </div>
+                <div class="mt-5">
+                    <div class="h-[56px]  w-[56px] rounded-[50%] mx-auto">
+                        <img src="https://travosy.vercel.app/static/media/02.b98e5c0bb7d12e4c5e77.jpg" alt="" class="w-[56px] h-[56px] rounded-[50%] ">
+                    </div>
+                    <h1 class="py-5 font-bold">Cristino Murfi</h1>
+                    <p class="text-[#94A3B8] font-bold">Manager</p>
+                </div>
+            </div>
+            
+            
+         </div>
+      </div>
+       <!-- testimonials end -->
+
+
+
+    <!-- images section -->
+    <div class="slider owl-carousel">
+        <div class=" ">
+            <img src="https://travosy.vercel.app/static/media/1.07f134933e8c8ac359b9.jpg" alt="" class="h-[160px] w-[102px] " >
+        </div>
+        <div class=" ">
+            <img src="https://travosy.vercel.app/static/media/3.597c87bf0632b9e644e2.jpg" alt="" class="h-[160px] w-[102px] " >
+        </div>
+        <div class=" ">
+            <img src="https://travosy.vercel.app/static/media/4.738a1d5ee8bdcfd7b945.jpg" alt="" class="h-[160px] w-[102px] " >
+        </div>
+        <div class=" ">
+            <img src="https://travosy.vercel.app/static/media/5.7fc305392ebd2b2e44bd.jpg" alt="" class="h-[160px] w-[102px] " >
+        </div>
+        <div class=" ">
+            <img src="https://travosy.vercel.app/static/media/6.80f336c14ef430b03951.jpg" alt="" class="h-[160px] w-[102px] " >
+        </div>
+        <div class=" ">
+            <img src="https://travosy.vercel.app/static/media/7.5cfd54c6101a50fd4a60.jpg" alt="" class="h-[160px] w-[102px] " >
+        </div>
+        <div class=" ">
+            <img src="https://travosy.vercel.app/static/media/8.5792393c610e8d6c2236.jpg" alt="" class="h-[160px] w-[102px] " >
+        </div>
+        <div class=" ">
+            <img src="https://travosy.vercel.app/static/media/9.d91e9dafb799dc9eeb03.jpg" alt="" class="h-[160px] w-[102px] " >
+        </div>
+        <div class=" ">
+            <img src="https://travosy.vercel.app/static/media/10.9dbeb30e826a7a4d09a4.jpg" alt="" class="h-[160px] w-[102px] " >
+        </div>
+        <div class=" ">
+            <img src="https://travosy.vercel.app/static/media/11.7bc6c00df41ec272ba43.jpg" alt="" class="h-[160px] w-[102px] " >
+        </div>
+        <div class=" ">
+            <img src="https://travosy.vercel.app/static/media/2.e083e5af6b98325ac9ed.jpg" alt="" class="h-[160px] w-[102px] " >
+        </div>
+        
+    </div>
+      <!-- footer st -->
+      <div class=" bg-[#1f2937]  h-[500px] text-white w-full">
+        <div class="grid-cols-4 flex container mx-auto space-x-10">
+            <div class="cols-span-1 w-[300px] text-xl ">
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAIUAAAAcCAYAAABPs3y3AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA2RpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDpBNTlEOUU0QkI0QzBFRTExQUY4MkM3ODFEQkQ3RjEwRSIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDowN0QwQUVFRkMwRjcxMUVFOEZCQjk2QjkzREM2MUY0RSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDowN0QwQUVFRUMwRjcxMUVFOEZCQjk2QjkzREM2MUY0RSIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgQ1M1IFdpbmRvd3MiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDo5MEE1QTZEMEYwQzBFRTExQUY4MkM3ODFEQkQ3RjEwRSIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDpBNTlEOUU0QkI0QzBFRTExQUY4MkM3ODFEQkQ3RjEwRSIvPiA8L3JkZjpEZXNjcmlwdGlv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" alt="" class=" py-10">
+                <p>Planning for a trip? We will organize your trip with the best places and within best budget!</p>
+                <div class=" py-5 space-x-3">
+                    <a href="#">
+                        <i class="fa-brands fa-facebook-f bg-gray-800  hover:bg-slate-500 p-2 rounded-md duration-500 border"></i>
+                    </a>
+                    <a href="#">
+                        <i class="fa-brands fa-twitter bg-gray-800 hover:bg-slate-500 p-2 rounded-md duration-500 border"></i>
+                    </a>
+                    <a href="#">
+                        <i class="fa-brands fa-instagram bg-gray-800 hover:bg-slate-500 p-2 rounded-md duration-500 border"></i>
+                    </a>
+                    <a href="#">
+                        <i class="fa-regular fa-envelope bg-gray-800 hover:bg-slate-500 p-2 rounded-md duration-500 border"></i>
+                        
+                    </a>
+                    <a href="#">
+                        <i class="fa-brands fa-linkedin-in bg-gray-800 hover:bg-slate-500 p-2 rounded-md duration-500 border"></i>
+                    
+                    </a>
+                </div>
+            </div>
+            <div class="cols-span-1 w-[300px] text-xl ">
+                <h1 class="text-2xl py-10">Office </h1>
+                <ul class="space-y-5">
+                    <li class="hover:text-[#fb4848] space-x-2">
+                        
+                        <a href="#">Travosy Tour & Travels
+                        </a>
+                    </li>
+                    <li class="hover:text-[#fb4848] space-x-2 flex ">
+                        <i class="fa-solid fa-location-dot text-[#fb4848] py-2"></i>
+                        <p>/54 Northwest Freeway,
+                            Suite 558,
+                            Houston, USA 485</p>
+                    </li>
+                    <li class="hover:text-[#fb4848] space-x-2">
+                        <i class="fa-regular fa-envelope text-[#fb4848]"></i>
+                        <a href="#">contact@example.com</a>
+                    </li>
+                    <li class="hover:text-[#fb4848] space-x-2 ">
+                        <i class="fa-solid fa-phone text-[#fb4848]"></i>
+                        <a href="#">+152 353-468-854</a>
+                    </li>
+                    
+                </ul>
+            </div>
+            <div class="cols-span-1 w-[300px] text-xl ">
+                <h1 class="text-2xl py-10 ">Conpamy </h1>
+                <ul class="space-y-5">
+                    <li class="hover:text-[#fb4848] space-x-2">
+                        <i class="fa-solid fa-circle-check"></i>
+                        <a href="#" class="hover:text-[#fb4848]"> About us</a>
+                    </li>
+                    <li class="hover:text-[#fb4848] space-x-2">
+                        <i class="fa-solid fa-circle-check"></i>
+                        <a href="#" class="hover:text-[#fb4848]">Services</a>
+                    </li>
+                    <li class="hover:text-[#fb4848] space-x-2">
+                        <i class="fa-solid fa-circle-check"></i>
+                        <a href="#" class="hover:text-[#fb4848]">Team</a>
+                    </li>
+                    <li class="hover:text-[#fb4848] space-x-2">
+                        <i class="fa-solid fa-circle-check"></i>
+                        <a href="#" class="hover:text-[#fb4848]">Pricing </a>
+                    </li>
+                    
+                </ul>
+            </div>
+            <div class="cols-span-1 w-[300px]  space-y-5 ">
+                <h1 class="text-2xl py-10 ">Newsletter </h1>
+                <div>
+                    <p>Sign up and receive the latest tips via email.</p>
+                </div>
+                <div>
+                    Write your email*
+                </div>
+                <div class="space-y-10">
+                    <div class=" flex items-center space-x-4 bg-[#253d5e] py-4 rounded-lg px-5">
+                        <i class="fa-regular fa-envelope "></i>
+                        <h1> Email</h1>
+                    </div>
+                    
+                    <div class="items-center">
+                        <a href="#" class="py-4 rounded-lg px-[112px] bg-[#ef4444] ">
+                           <b> Subscribe</b>
+                        </a>
+                    </div>
+                </div>
+                
+
+            </div>
+
+        </div>
+            <div class="mx-auto flex justify-center items-center py-8  px-10 bg-slate-900 mt-16 w-full">
+                <div class=" flex space-x-2 text-center">
+                    <p>© 2024 Travosy. Design & Develop with  by Shreethemes.</p>
+                </div>
+               
+            </div>
+    <!-- footer end -->
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script>
+             $(".para").owlCarousel({
+            items: 3,
+            autoplay: true,
+            loop: true,
+        })
+
+
+         $(".slider").owlCarousel({
+            items: 12,
+            autoplay: true,
+            loop: true,
+        })
+    </script>
+</body>
+</html>
+<!-- https://travosy.vercel.app/index-three -->
+<!-- http://preview.themeforest.net/item/adventure-tours-wordpress-tourtravel-theme/full_screen_preview/12781942?_ga=2.177546597.1922088449.1721219502-1726522015.1709101592&_gac=1.204787364.1720703998.EAIaIQobChMIuqi58omfhwMVxW4PAh2xqwOQEAAYASAAEgLtWPD_BwE -->
+  <!-- https://demo.goodlayers.com/traveltour/homepages/main5/ -->
+   <!-- https://demo.goodlayers.com/traveltour/main4/ -->
+    <!-- https://travosy.vercel.app/ -->
